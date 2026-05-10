@@ -3,8 +3,8 @@ class GovernmentService {
     this.pool = pool;
     this.serviceCatalog = [
       { key: 'passport', title: 'Passport Application', description: 'Apply for or renew your passport.' },
-      { key: 'birth_certificate', title: 'Birth Certificate', description: 'Request certified birth records.' },
-      { key: 'drivers_license', title: 'Driver\'s License', description: 'Apply or renew your driver\'s license.' }
+      { key: 'birth-certificate', title: 'Birth Certificate', description: 'Request certified birth records.' },
+      { key: 'drivers-license', title: 'Driver\'s License', description: 'Apply or renew your driver\'s license.' }
     ];
   }
 

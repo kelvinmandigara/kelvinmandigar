@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -104,7 +106,7 @@ class RotationYTransition extends AnimatedWidget {
   @override
   Widget build(BuildContext context) {
     final value = turns.value;
-    final angle = value * 3.14159;
+    final angle = value * math.pi;
     return Transform(
       alignment: Alignment.center,
       transform: Matrix4.identity()

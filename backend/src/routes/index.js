@@ -67,8 +67,8 @@ function buildRouter({ citizenService, governmentService }) {
   };
 
   router.post('/api/v1/services/passport/apply', handleServiceSubmission('passport'));
-  router.post('/api/v1/services/birth-certificate/apply', handleServiceSubmission('birth_certificate'));
-  router.post('/api/v1/services/drivers-license/apply', handleServiceSubmission('drivers_license'));
+  router.post('/api/v1/services/birth-certificate/apply', handleServiceSubmission('birth-certificate'));
+  router.post('/api/v1/services/drivers-license/apply', handleServiceSubmission('drivers-license'));
 
   return router;
 }
