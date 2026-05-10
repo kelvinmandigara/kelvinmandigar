@@ -30,8 +30,8 @@ function buildApp() {
     listDashboardServices() {
       return [
         { key: 'passport', title: 'Passport Application' },
-        { key: 'birth_certificate', title: 'Birth Certificate' },
-        { key: 'drivers_license', title: 'Driver\'s License' }
+        { key: 'birth-certificate', title: 'Birth Certificate' },
+        { key: 'drivers-license', title: 'Driver\'s License' }
       ];
     },
     async submitApplication(citizenId, serviceType, payload) {
