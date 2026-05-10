@@ -10,7 +10,7 @@ const governmentService = new GovernmentService(pool);
 const app = createApp({
   citizenService,
   governmentService,
-  corsOrigin: config.corsOrigin
+  corsOrigins: config.corsOrigins
 });
 
 app.listen(config.port, () => {

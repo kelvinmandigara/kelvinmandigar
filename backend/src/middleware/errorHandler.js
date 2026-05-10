@@ -7,6 +7,10 @@ function errorHandler(error, req, res, _next) {
     return res.status(413).json({ message: 'Uploaded photo exceeds size limit.' });
   }
 
+  if (error.message === 'CORS origin not allowed') {
+    return res.status(403).json({ message: error.message });
+  }
+
   return res.status(500).json({ message: 'Internal server error.' });
 }
 

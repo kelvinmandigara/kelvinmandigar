@@ -1,7 +1,7 @@
 const express = require('express');
 const multer = require('multer');
 
-function buildRouter({ citizenService, governmentService, corsOrigin }) {
+function buildRouter({ citizenService, governmentService }) {
   const router = express.Router();
   const upload = multer({
     storage: multer.memoryStorage(),

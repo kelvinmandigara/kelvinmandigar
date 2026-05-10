@@ -48,7 +48,7 @@ function buildApp() {
     }
   };
 
-  return createApp({ citizenService, governmentService, corsOrigin: '*' });
+  return createApp({ citizenService, governmentService, corsOrigins: ['http://localhost:3000'] });
 }
 
 test('register citizen and fetch profile', async () => {
